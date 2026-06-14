@@ -71,10 +71,9 @@ SIEM configuration · log analysis · threat detection · detection engineering 
 incident response · MITRE ATT&CK mapping · adversary emulation · virtualization &
 network segmentation
 
-## Certifications (in progress)
+## Certifications
 
-CompTIA Security+ · CompTIA CySA+ · Blue Team Level 1 (BTL1)
-
+CompTIA Security+ · ISC2 Certified in Cybersecurity (CC) · Antisyphon SOC COre Skills V3
 ---
 
 *This is a personal learning lab. All attacks are performed against systems I own,
