@@ -17,4 +17,4 @@ The target design uses a 5-port Gigabit switch with host-only/internal segmentat
 - `lab-architecture.png` — full target architecture
 - `network-topology.png` — current network/traffic flow
 
-> Replace the placeholder image files with your exported diagrams.
+
