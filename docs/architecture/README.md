@@ -8,7 +8,7 @@ A two-machine virtualized SOC lab built entirely in VirtualBox.
 - **Raspberry Pi Zero 2 W** — Cowrie honeypot + Wazuh-monitored endpoint *(planned)*
 
 ## Network
-Detection loop: **Kali attacks the victims → victim Wazuh agents ship logs → Wazuh detects.**
+Detection loop: **Kali attacks the victims -> victim Wazuh agents ship logs -> Wazuh detects.**
 
 Current build bridges both physical hosts onto the same network so VMs can reach each other.
 The target design uses a 5-port Gigabit switch with host-only/internal segmentation.
