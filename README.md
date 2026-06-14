@@ -74,6 +74,7 @@ network segmentation
 ## Certifications
 
 CompTIA Security+ · ISC2 Certified in Cybersecurity (CC) · Antisyphon SOC Core Skills V3
+
 ---
 
 *This is a personal learning lab. All attacks are performed against systems I own,
