@@ -12,7 +12,8 @@ Wazuh surfaced a cluster of failed-logon events originating from a single intern
 
 The investigation began with failed-logon alerts in the Wazuh dashboard (Threat Hunting), not with prior knowledge of any attack. The initial observation was a tight burst of events sharing the same rule and target host:
 
-![[Screenshot 2026-06-29 211236 2.png]]
+<img width="956" height="809" alt="Screenshot 2026-06-29 211236 2" src="https://github.com/user-attachments/assets/60fff775-aaa7-414d-a01f-d032db7f102d" />
+
 
 | Field            | Observed value                                         |
 | ---------------- | ------------------------------------------------------ |
@@ -29,7 +30,8 @@ A single failed logon is routine noise. What drew attention here was the **clust
 
 The key triage question: _is this a user mistyping a password, or something coordinated?_ To distinguish, a single 4625 event was expanded to examine its fields:
 
-Placeholder
+<img width="962" height="758" alt="Screenshot 2026-06-29 212158" src="https://github.com/user-attachments/assets/abf98d96-9199-49b0-b472-091a85c84915" />
+
 
 The fields immediately reframed the activity as suspicious rather than benign:
 
@@ -114,7 +116,8 @@ Detection worked, but the investigation surfaced gaps worth closing:
     
     Re-scan confirmed `445/tcp open`.
     
-    Placeholder    
+    <img width="658" height="523" alt="Screenshot 2026-06-29 210135" src="https://github.com/user-attachments/assets/1fccd274-5bdf-4e88-bf42-b9ab30bdcb70" />
+    
 
 **Attack command (from Kali)**
 
@@ -126,7 +129,8 @@ netexec smb 192.168.1.106 -u users.txt -p 'Password123'
 
 Output — all four attempts rejected by design (failures are the objective; they generate the 4625 events the detection relies on):
 
-Placeholder
+<img width="855" height="730" alt="Screenshot 2026-06-29 211050" src="https://github.com/user-attachments/assets/a6377adb-7de3-4bcb-9e3e-d1b3edf5546d" />
+
 
 ```
 SMB  192.168.1.106  445  DESKTOP-UL3FHI7  [-] DESKTOP-UL3FHI7\user:Password123          STATUS_LOGON_FAILURE
